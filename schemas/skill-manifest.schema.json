@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecc-fusion.local/schemas/skill-manifest.schema.json",
+  "title": "ECC-Fusion Skill Manifest",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "file",
+      "category",
+      "pathAvailability",
+      "prerequisites",
+      "sourceInspiration",
+      "sharedSkill",
+      "conflictsWith",
+      "owner",
+      "deprecated"
+    ],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+      "name": { "type": "string", "minLength": 1 },
+      "file": { "type": "string", "minLength": 1 },
+      "category": {
+        "type": "string",
+        "enum": [
+          "Discovery & Help",
+          "Clarification & Research",
+          "Specification & Product",
+          "Architecture & Planning",
+          "Work Packet & Delegation",
+          "Implementation",
+          "Testing & Verification",
+          "Review & Security",
+          "QA & Release",
+          "Documentation & Handoff",
+          "Memory & Context Management",
+          "Governance & Maintenance",
+          "Automation Accelerators"
+        ]
+      },
+      "pathAvailability": {
+        "type": "array",
+        "items": { "enum": ["Short Path", "Regular Path", "Auto", "Ralph"] },
+        "minItems": 1,
+        "uniqueItems": true
+      },
+      "prerequisites": { "type": "array", "items": { "type": "string" } },
+      "sourceInspiration": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+      "sharedSkill": { "type": "boolean" },
+      "conflictsWith": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+      "owner": { "type": "string", "minLength": 1 },
+      "deprecated": { "type": "boolean" }
+    },
+    "additionalProperties": false
+  }
+}

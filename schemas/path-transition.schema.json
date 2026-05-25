@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecc-fusion.local/schemas/path-transition.schema.json",
+  "title": "ECC-Fusion Path Transition",
+  "type": "object",
+  "required": [
+    "currentPath",
+    "requestedAction",
+    "blocked",
+    "missingPrerequisites"
+  ],
+  "properties": {
+    "currentPath": {
+      "enum": [
+        "Short Path",
+        "Regular Path",
+        "Auto",
+        "Ralph"
+      ]
+    },
+    "requestedAction": {
+      "type": "string"
+    },
+    "blocked": {
+      "type": "boolean"
+    },
+    "missingPrerequisites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

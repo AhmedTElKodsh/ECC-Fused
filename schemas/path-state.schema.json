@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecc-fusion.local/schemas/path-state.schema.json",
+  "title": "ECC-Fusion Path State",
+  "type": "object",
+  "required": [
+    "activePath",
+    "currentPhase",
+    "riskLevel",
+    "artifactCompleteness",
+    "nextRecommendedCommands"
+  ],
+  "properties": {
+    "activePath": {
+      "enum": [
+        "Short Path",
+        "Regular Path",
+        "Auto",
+        "Ralph"
+      ]
+    },
+    "currentPhase": {
+      "type": "string"
+    },
+    "riskLevel": {
+      "enum": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    "artifactCompleteness": {
+      "type": "object"
+    },
+    "nextRecommendedCommands": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

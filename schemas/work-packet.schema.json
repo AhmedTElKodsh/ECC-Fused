@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecc-fusion.local/schemas/work-packet.schema.json",
+  "title": "ECC-Fusion Work Packet",
+  "type": "object",
+  "required": [
+    "id",
+    "riskLevel",
+    "objective",
+    "scope",
+    "filesAllowed",
+    "acceptanceCriteria",
+    "verificationCommands"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "riskLevel": {
+      "enum": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    "objective": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "filesAllowed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "acceptanceCriteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verificationCommands": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

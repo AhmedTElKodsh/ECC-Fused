@@ -1,0 +1,11 @@
+{
+  "objective": "",
+  "bounds": [],
+  "feedbackLoop": "",
+  "stopConditions": [
+    "freeze",
+    "overload",
+    "repeated failure",
+    "no progress"
+  ]
+}

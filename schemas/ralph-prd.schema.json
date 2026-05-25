@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecc-fusion.local/schemas/ralph-prd.schema.json",
+  "title": "ECC-Fusion Ralph PRD",
+  "type": "object",
+  "required": [
+    "objective",
+    "bounds",
+    "feedbackLoop",
+    "stopConditions"
+  ],
+  "properties": {
+    "objective": {
+      "type": "string"
+    },
+    "bounds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "feedbackLoop": {
+      "type": "string"
+    },
+    "stopConditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

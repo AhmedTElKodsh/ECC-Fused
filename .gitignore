@@ -1,0 +1,12 @@
+.agent/
+.agents/
+.bob/
+.claude/
+.cline/
+.kiro/
+.trae/
+
+node_modules/
+npm-debug.log*
+.DS_Store
+Thumbs.db

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecc-fusion.local/schemas/model-routing.schema.json",
+  "title": "ECC-Fusion Model Routing",
+  "type": "object",
+  "required": [
+    "riskLevel",
+    "assignedModelTier",
+    "escalationRequired"
+  ],
+  "properties": {
+    "riskLevel": {
+      "enum": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    "assignedModelTier": {
+      "enum": [
+        "High-end",
+        "OSS-local",
+        "Human"
+      ]
+    },
+    "escalationRequired": {
+      "type": "boolean"
+    }
+  }
+}
