@@ -17,6 +17,18 @@ Route /ecc-ralph-status through the ECC-Fusion control plane while preserving EC
 4. Invoke or recommend `ralph-loop`.
 5. Emit a Transition Notice if required artifacts are missing.
 
+## Workflow
+
+1. Report current Ralph packet, iteration, last command, last evidence, and stop condition.
+2. Do not continue execution from status.
+3. Recommend `/ecc-ralph-run` or `/ecc-ralph-stop` based on state.
+
+## Guardrails
+
+- Preserve ECC compatibility and existing user-owned files.
+- Keep source attribution visible when adapting external framework concepts.
+- Stop at a Transition Notice when prerequisites are missing or risk exceeds the current path.
+
 ## Output
 
 Return the route note, artifacts inspected, next command, and blockers.

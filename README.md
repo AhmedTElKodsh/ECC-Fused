@@ -2,11 +2,34 @@
 
 ## What ECC-Fusion Is
 
-ECC-Fusion is an ECC-based agentic development library that combines a low-ceremony Short Path with a fuller Regular Path while preserving ECC install/runtime compatibility.
+ECC-Fusion is an ECC-based agentic development library for spec-driven AI coding. It keeps ECC as the install/runtime/control base, then maps useful ideas from BMAD-METHOD, Superpowers, Matt Pocock skills, GitHub Spec Kit, OpenSpec, GSD Redux, Agent OS, gstack, and Ralph into one routed lifecycle.
+
+## Harness Ecosystem
+
+The Harness Ecosystem is the backbone that powers and regulates paths, phases, skill relations, orchestration commands, workflow rules, planning artifacts, and validation. Its machine-readable control file is `manifests/harness.json`; its human-readable generated catalog is `ecosystem/`.
+
+Do not move canonical executable skills out of `skills/` or executable commands out of `commands/`. Category folders under `ecosystem/skills/` are generated mirrors for traceability, not the runtime source of truth.
 
 ## I Do Not Know What I Need
 
-Use `/ecc-help` when the next step is unclear. It recommends a route, explains why, lists prerequisites, and stops with a Transition Notice when blocked.
+Use `/ecc-help` when the next step is unclear. It recommends a route, phase, next artifact, and next command, then stops with a Transition Notice when blocked.
+
+## First-Run Decision Diagram
+
+```mermaid
+flowchart TD
+  A["User describes task"] --> B["/ecc-help or direct path choice"]
+  B --> C{"Risk, scope, ambiguity, artifacts"}
+  C -->|Bounded, reversible, low risk| S["Short Path"]
+  C -->|Unclear, risky, architectural, release-sensitive| R["Regular Path"]
+  C -->|Eligible bounded automation| P["Ralph mode"]
+  S --> W["Work packet"]
+  W --> I["Implement"]
+  I --> V["Verify"]
+  V --> T{"Need more rigor?"}
+  T -->|Yes| N["Transition Notice"]
+  N --> R
+```
 
 ## Which Path Should I Choose?
 
@@ -21,6 +44,10 @@ ECC remains the base platform for agents, skills, commands, manifests, hooks, in
 ## Two Main Paths
 
 The two main paths are Short Path and Regular Path. Auto mode selects between them by inspecting risk, ambiguity, state, and artifact completeness.
+
+## Phase Map
+
+Both paths use one lifecycle: Orient, Scope, Specify, Design, Plan, Build, Verify, Release, and Learn. See `docs/path-phase-map.md` for the phase/subphase table and skill matrix.
 
 ## Path Selection
 
@@ -38,13 +65,17 @@ A Transition Notice explains the requested action, why it is blocked, missing pr
 
 Shared skills can run from both paths only when prerequisites exist. Examples include verification, review, security review, package check, handoff, and `/ecc-help`.
 
+## Kiro Planning Artifacts
+
+Regular Path uses Kiro-style visible planning artifacts to keep the developer in sync with agent work: `requirements.md`, `design/`, `tasks.md`, and `qa-tasks.md`. Templates live in `planning-templates/kiro-spec/`.
+
 ## Work Packets
 
 Work packets define objective, scope, allowed files, forbidden files, acceptance criteria, tests, verification commands, and escalation rules.
 
 ## Model Routing
 
-Model routing assigns high-end, OSS-local, or human tiers based on risk. OSS/local workers may only execute bounded low-risk work packets.
+Model routing assigns high-end, OSS/local, or human tiers based on risk. The ECC Harness standardizes prompts, artifacts, memory shape, verification gates, and fallback behavior; it does not make small models equal to premium models on high-ambiguity work.
 
 ## Ralph Mode
 
@@ -89,6 +120,23 @@ Short Path can promote to Regular Path when scope or risk grows. Regular Path ca
 ## Avoid Skill Bloat
 
 Add a skill only for repeatable workflows, repeatable failure modes, project-specific processes, or reusable domain knowledge.
+
+## Future Modifications
+
+Before changing or adding a skill, identify its phase, category, source inspiration, path availability, prerequisites, conflicts, evidence requirements, and escalation rules. Regenerate `ecosystem/` and run the validation gates so the Harness Ecosystem stays coherent.
+
+## Documentation Map
+
+- `docs/harness-ecosystem.md`: harness backbone and integrity rules.
+- `docs/kiro-planning-artifacts.md`: visible requirements/design/tasks/qa-tasks planning model.
+- `docs/path-phase-map.md`: canonical lifecycle, phase/subphase matrix, skill table, and promotion visuals.
+- `docs/skill-extension-guide.md`: rules for modifying or adding skills without disrupting the ecosystem.
+
+## Regenerate Ecosystem Catalog
+
+```powershell
+node scripts/generate-ecosystem-catalog.mjs
+```
 
 ## Run Tests
 

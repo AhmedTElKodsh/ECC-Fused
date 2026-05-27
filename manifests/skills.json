@@ -2,7 +2,7 @@
   {
     "id": "ask-interview",
     "name": "Ask Interview",
-    "file": "skills/ask-interview/SKILL.md",
+    "file": "skills/01-Discovery/ask-interview/SKILL.md",
     "category": "Clarification & Research",
     "pathAvailability": [
       "Short Path",
@@ -26,7 +26,7 @@
   {
     "id": "ecc-help",
     "name": "ECC Help",
-    "file": "skills/ecc-help/SKILL.md",
+    "file": "skills/01-Discovery/ecc-help/SKILL.md",
     "category": "Discovery & Help",
     "pathAvailability": [
       "Short Path",
@@ -50,7 +50,7 @@
   {
     "id": "grill-with-context",
     "name": "Grill With Context",
-    "file": "skills/grill-with-context/SKILL.md",
+    "file": "skills/01-Discovery/grill-with-context/SKILL.md",
     "category": "Clarification & Research",
     "pathAvailability": [
       "Regular Path",
@@ -73,7 +73,7 @@
   {
     "id": "write-spec",
     "name": "Write Spec",
-    "file": "skills/write-spec/SKILL.md",
+    "file": "skills/01-Discovery/write-spec/SKILL.md",
     "category": "Specification & Product",
     "pathAvailability": [
       "Regular Path",
@@ -95,7 +95,7 @@
   {
     "id": "prototype-ui",
     "name": "Prototype UI",
-    "file": "skills/prototype-ui/SKILL.md",
+    "file": "skills/02-Planning/prototype-ui/SKILL.md",
     "category": "Specification & Product",
     "pathAvailability": [
       "Regular Path",
@@ -118,7 +118,7 @@
   {
     "id": "architecture-plan",
     "name": "Architecture Plan",
-    "file": "skills/architecture-plan/SKILL.md",
+    "file": "skills/02-Planning/architecture-plan/SKILL.md",
     "category": "Architecture & Planning",
     "pathAvailability": [
       "Regular Path",
@@ -140,7 +140,7 @@
   {
     "id": "create-work-packets",
     "name": "Create Work Packets",
-    "file": "skills/create-work-packets/SKILL.md",
+    "file": "skills/02-Planning/create-work-packets/SKILL.md",
     "category": "Work Packet & Delegation",
     "pathAvailability": [
       "Short Path",
@@ -163,7 +163,7 @@
   {
     "id": "implement-work-packet",
     "name": "Implement Work Packet",
-    "file": "skills/implement-work-packet/SKILL.md",
+    "file": "skills/03-Implementation/implement-work-packet/SKILL.md",
     "category": "Implementation",
     "pathAvailability": [
       "Short Path",
@@ -185,7 +185,7 @@
   {
     "id": "tdd",
     "name": "TDD",
-    "file": "skills/tdd/SKILL.md",
+    "file": "skills/03-Implementation/tdd/SKILL.md",
     "category": "Testing & Verification",
     "pathAvailability": [
       "Short Path",
@@ -208,7 +208,7 @@
   {
     "id": "diagnose",
     "name": "Diagnose",
-    "file": "skills/diagnose/SKILL.md",
+    "file": "skills/04-Testing-and-QA/diagnose/SKILL.md",
     "category": "Clarification & Research",
     "pathAvailability": [
       "Short Path",
@@ -232,7 +232,7 @@
   {
     "id": "write-tests",
     "name": "Write Tests",
-    "file": "skills/write-tests/SKILL.md",
+    "file": "skills/04-Testing-and-QA/write-tests/SKILL.md",
     "category": "Testing & Verification",
     "pathAvailability": [
       "Short Path",
@@ -255,7 +255,7 @@
   {
     "id": "verify-work",
     "name": "Verify Work",
-    "file": "skills/verify-work/SKILL.md",
+    "file": "skills/04-Testing-and-QA/verify-work/SKILL.md",
     "category": "Testing & Verification",
     "pathAvailability": [
       "Short Path",
@@ -278,7 +278,7 @@
   {
     "id": "review-oss-output",
     "name": "Review OSS Output",
-    "file": "skills/review-oss-output/SKILL.md",
+    "file": "skills/05-Review-and-Release/review-oss-output/SKILL.md",
     "category": "Review & Security",
     "pathAvailability": [
       "Short Path",
@@ -300,7 +300,7 @@
   {
     "id": "security-review",
     "name": "Security Review",
-    "file": "skills/security-review/SKILL.md",
+    "file": "skills/05-Review-and-Release/security-review/SKILL.md",
     "category": "Review & Security",
     "pathAvailability": [
       "Short Path",
@@ -322,7 +322,7 @@
   {
     "id": "qa-browser",
     "name": "QA Browser",
-    "file": "skills/qa-browser/SKILL.md",
+    "file": "skills/04-Testing-and-QA/qa-browser/SKILL.md",
     "category": "QA & Release",
     "pathAvailability": [
       "Regular Path"
@@ -343,7 +343,7 @@
   {
     "id": "ship-release",
     "name": "Ship Release",
-    "file": "skills/ship-release/SKILL.md",
+    "file": "skills/05-Review-and-Release/ship-release/SKILL.md",
     "category": "QA & Release",
     "pathAvailability": [
       "Regular Path"
@@ -364,7 +364,7 @@
   {
     "id": "retro-learn",
     "name": "Retro Learn",
-    "file": "skills/retro-learn/SKILL.md",
+    "file": "skills/05-Review-and-Release/retro-learn/SKILL.md",
     "category": "Documentation & Handoff",
     "pathAvailability": [
       "Regular Path"
@@ -385,7 +385,7 @@
   {
     "id": "write-a-skill",
     "name": "Write A Skill",
-    "file": "skills/write-a-skill/SKILL.md",
+    "file": "skills/06-Governance/write-a-skill/SKILL.md",
     "category": "Governance & Maintenance",
     "pathAvailability": [
       "Regular Path"
@@ -407,7 +407,7 @@
   {
     "id": "skill-lint",
     "name": "Skill Lint",
-    "file": "skills/skill-lint/SKILL.md",
+    "file": "skills/06-Governance/skill-lint/SKILL.md",
     "category": "Governance & Maintenance",
     "pathAvailability": [
       "Short Path",
@@ -429,7 +429,7 @@
   {
     "id": "package-check",
     "name": "Package Check",
-    "file": "skills/package-check/SKILL.md",
+    "file": "skills/06-Governance/package-check/SKILL.md",
     "category": "Governance & Maintenance",
     "pathAvailability": [
       "Short Path",
@@ -451,7 +451,7 @@
   {
     "id": "handoff",
     "name": "Handoff",
-    "file": "skills/handoff/SKILL.md",
+    "file": "skills/05-Review-and-Release/handoff/SKILL.md",
     "category": "Documentation & Handoff",
     "pathAvailability": [
       "Short Path",
@@ -474,7 +474,7 @@
   {
     "id": "path-switch",
     "name": "Path Switch",
-    "file": "skills/path-switch/SKILL.md",
+    "file": "skills/06-Governance/path-switch/SKILL.md",
     "category": "Work Packet & Delegation",
     "pathAvailability": [
       "Short Path",
@@ -497,7 +497,7 @@
   {
     "id": "transition-guard",
     "name": "Transition Guard",
-    "file": "skills/transition-guard/SKILL.md",
+    "file": "skills/06-Governance/transition-guard/SKILL.md",
     "category": "Work Packet & Delegation",
     "pathAvailability": [
       "Short Path",
@@ -520,7 +520,7 @@
   {
     "id": "ralph-loop",
     "name": "Ralph Loop",
-    "file": "skills/ralph-loop/SKILL.md",
+    "file": "skills/03-Implementation/ralph-loop/SKILL.md",
     "category": "Automation Accelerators",
     "pathAvailability": [
       "Ralph"

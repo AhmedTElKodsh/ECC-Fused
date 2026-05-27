@@ -1,25 +1,25 @@
 # Path Switching
 
-## Purpose
+Path switching lets ECC-Fusion start fast and still become fully governed when the work demands it.
 
-Define the ECC-Fusion Path Switching surface and keep it aligned with commands, skills, manifests, schemas, and planning artifacts.
+## Promotion Flow
+
+```mermaid
+flowchart TD
+  A["Short Path route"] --> B["Work packet"]
+  B --> C["Implementation or verification"]
+  C --> D{"Escalation trigger?"}
+  D -->|No| E["Finish Short Path"]
+  D -->|Yes| F["Transition Notice"]
+  F --> G["Missing artifacts checklist"]
+  G --> H["Recommended Regular Path command"]
+```
 
 ## Required Behavior
 
-- Preserve ECC compatibility.
-- Apply source-of-truth precedence.
-- Use Short Path only for bounded low-risk work.
-- Use Regular Path for ambiguous, high-risk, multi-phase, or production-sensitive work.
-- Emit a Transition Notice when prerequisites are missing.
-- Verify claims with tests, checks, or documented evidence.
-
-## Related Surfaces
-
-- `commands/`
-- `skills/`
-- `schemas/`
-- `planning-templates/`
-- `rules/`
+- Preserve useful evidence when promoting from Short Path to Regular Path.
+- Do not create missing Regular Path prerequisites silently unless the user asked for artifact generation.
+- Apply ECC-Fusion contracts over conflicting source-library guidance unless the user explicitly overrides them.
 
 ## Validation
 

@@ -17,6 +17,18 @@ Route /ecc-ralph-prepare through the ECC-Fusion control plane while preserving E
 4. Invoke or recommend `ralph-loop`.
 5. Emit a Transition Notice if required artifacts are missing.
 
+## Workflow
+
+1. Verify a bounded low-risk work packet exists.
+2. Set Ralph limits for files, iterations, commands, and stop conditions.
+3. Block when Ralph would need to plan or expand scope.
+
+## Guardrails
+
+- Preserve ECC compatibility and existing user-owned files.
+- Keep source attribution visible when adapting external framework concepts.
+- Stop at a Transition Notice when prerequisites are missing or risk exceeds the current path.
+
 ## Output
 
 Return the route note, artifacts inspected, next command, and blockers.

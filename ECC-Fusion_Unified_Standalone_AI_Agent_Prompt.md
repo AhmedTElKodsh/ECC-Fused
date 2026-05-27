@@ -680,12 +680,18 @@ Use `.planning/` as the first-class artifact layer.
 Create this structure:
 
 ```text
+REQUIREMENTS.md
+TASKS.md
+DESIGN/
+  ARCHITECTURE.md
+  PLAN.md
+  STORIES.md
+  WORK_PACKETS/
 .planning/
   PROJECT.md
   CONTEXT.md
   STATE.md
   state.yaml
-  REQUIREMENTS.md
   ROADMAP.md
   DECISIONS.md
   RISKS.md
@@ -694,10 +700,6 @@ Create this structure:
       DISCUSSION.md
       SPEC.md
       PROTOTYPE.md
-      ARCHITECTURE.md
-      PLAN.md
-      STORIES.md
-      WORK_PACKETS/
       VERIFY.md
       REVIEW.md
       QA.md
@@ -1117,30 +1119,30 @@ commands/ecc-ralph-stop.md
 Create these skill directories and files:
 
 ```text
-skills/ask-interview/SKILL.md
-skills/ecc-help/SKILL.md
-skills/grill-with-context/SKILL.md
-skills/write-spec/SKILL.md
-skills/prototype-ui/SKILL.md
-skills/architecture-plan/SKILL.md
-skills/create-work-packets/SKILL.md
-skills/implement-work-packet/SKILL.md
-skills/tdd/SKILL.md
-skills/diagnose/SKILL.md
-skills/write-tests/SKILL.md
-skills/verify-work/SKILL.md
-skills/review-oss-output/SKILL.md
-skills/security-review/SKILL.md
-skills/qa-browser/SKILL.md
-skills/ship-release/SKILL.md
-skills/retro-learn/SKILL.md
-skills/write-a-skill/SKILL.md
-skills/skill-lint/SKILL.md
-skills/package-check/SKILL.md
-skills/handoff/SKILL.md
-skills/path-switch/SKILL.md
-skills/transition-guard/SKILL.md
-skills/ralph-loop/SKILL.md
+skills/01-Discovery/ecc-help/SKILL.md
+skills/01-Discovery/ask-interview/SKILL.md
+skills/01-Discovery/grill-with-context/SKILL.md
+skills/01-Discovery/write-spec/SKILL.md
+skills/02-Planning/architecture-plan/SKILL.md
+skills/02-Planning/prototype-ui/SKILL.md
+skills/02-Planning/create-work-packets/SKILL.md
+skills/03-Implementation/implement-work-packet/SKILL.md
+skills/03-Implementation/tdd/SKILL.md
+skills/03-Implementation/ralph-loop/SKILL.md
+skills/04-Testing-and-QA/verify-work/SKILL.md
+skills/04-Testing-and-QA/write-tests/SKILL.md
+skills/04-Testing-and-QA/diagnose/SKILL.md
+skills/04-Testing-and-QA/qa-browser/SKILL.md
+skills/05-Review-and-Release/review-oss-output/SKILL.md
+skills/05-Review-and-Release/security-review/SKILL.md
+skills/05-Review-and-Release/ship-release/SKILL.md
+skills/05-Review-and-Release/retro-learn/SKILL.md
+skills/05-Review-and-Release/handoff/SKILL.md
+orchestration/path-switch/SKILL.md
+orchestration/transition-guard/SKILL.md
+orchestration/skill-lint/SKILL.md
+orchestration/package-check/SKILL.md
+orchestration/write-a-skill/SKILL.md
 ```
 
 Every `SKILL.md` must include:
@@ -1286,6 +1288,8 @@ planning-templates/QA-template.md
 planning-templates/SHIP-template.md
 planning-templates/RETRO-template.md
 planning-templates/RALPH-PRD-template.json
+planning-templates/REQUIREMENTS-template.md
+planning-templates/TASKS-template.md
 ```
 
 ---

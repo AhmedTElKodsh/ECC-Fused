@@ -1,0 +1,53 @@
+# /ecc-help
+
+> Generated mirror. Canonical source: `commands/ecc-help.md`.
+
+| Field | Value |
+| --- | --- |
+| Command id | `ecc-help` |
+| Category | Discovery & Help |
+| Related skill | `ecc-help` |
+| Path availability | Short Path, Regular Path, Auto |
+| State required | no |
+| Source inspiration | BMAD-METHOD, ECC |
+
+# /ecc-help
+
+Use this command when the user does not know what to do next, asks which path to choose, asks whether a shared skill can run, or requests help recovering from missing artifacts.
+
+## Behavior
+
+1. Inspect current user intent.
+2. Inspect repository state and `.planning/state.yaml` when present.
+3. Classify risk, ambiguity, artifact completeness, and requested skill or path.
+4. Apply source-of-truth precedence.
+5. Recommend Short Path, Regular Path, Auto, Ralph, or a shared skill.
+6. Emit a Transition Notice when prerequisites are missing.
+
+## Workflow
+
+1. Classify the user's intent and requested skill or path.
+2. Inspect active state, route prerequisites, and artifact completeness.
+3. Recommend the safest valid route and stop before execution unless the user explicitly proceeds.
+
+## Guardrails
+
+- Preserve advisory behavior by default.
+- Do not create artifacts or invoke Ralph from help alone.
+- Emit a Transition Notice when prerequisites are missing.
+
+## Output
+
+```text
+Route: <Short Path | Regular Path | Auto | Ralph | Shared skill>
+Reason: <one sentence>
+Source priority: <winning sources in order>
+Blocked: <yes | no>
+Next artifact: <artifact or none>
+Next command: <command or none>
+```
+
+## Safety
+
+`/ecc-help` is advisory by default. It must not create artifacts, run implementation, or invoke Ralph unless the user explicitly asks to proceed.
+

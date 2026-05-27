@@ -1,0 +1,48 @@
+# /ecc-ralph-run
+
+> Generated mirror. Canonical source: `commands/ecc-ralph-run.md`.
+
+| Field | Value |
+| --- | --- |
+| Command id | `ecc-ralph-run` |
+| Category | Automation Accelerators |
+| Related skill | `ralph-loop` |
+| Path availability | Ralph |
+| State required | yes |
+| Source inspiration | Ralph, ECC |
+
+# /ecc-ralph-run
+
+Category: Automation Accelerators
+Related skill: ralph-loop
+State required: yes
+Source inspiration: Ralph, ECC
+
+## Purpose
+
+Route /ecc-ralph-run through the ECC-Fusion control plane while preserving ECC compatibility.
+
+## Behavior
+
+1. Read the current user request.
+2. Apply source-of-truth precedence.
+3. Check required state and prerequisites.
+4. Invoke or recommend `ralph-loop`.
+5. Emit a Transition Notice if required artifacts are missing.
+
+## Workflow
+
+1. Run only the prepared bounded loop.
+2. Check feedback after every iteration.
+3. Stop on freeze, overload, repeated failure, no progress, or boundary breach.
+
+## Guardrails
+
+- Preserve ECC compatibility and existing user-owned files.
+- Keep source attribution visible when adapting external framework concepts.
+- Stop at a Transition Notice when prerequisites are missing or risk exceeds the current path.
+
+## Output
+
+Return the route note, artifacts inspected, next command, and blockers.
+

@@ -1,25 +1,30 @@
 # Short Path
 
-## Purpose
+Short Path is ECC-Fusion's fast verified track for bounded, low-risk, low-ambiguity work. It is not YOLO mode and it is not a smaller copy of Regular Path.
 
-Define the ECC-Fusion Short Path surface and keep it aligned with commands, skills, manifests, schemas, and planning artifacts.
+## Minimum Flow
+
+```mermaid
+flowchart LR
+  A["Route/risk check"] --> B["Work packet"]
+  B --> C["Implement"]
+  C --> D["Verify"]
+  D --> E{"Escalate?"}
+  E -->|No| F["Summary or handoff"]
+  E -->|Yes| G["Transition Notice to Regular Path"]
+```
 
 ## Required Behavior
 
 - Preserve ECC compatibility.
 - Apply source-of-truth precedence.
-- Use Short Path only for bounded low-risk work.
-- Use Regular Path for ambiguous, high-risk, multi-phase, or production-sensitive work.
-- Emit a Transition Notice when prerequisites are missing.
+- Create or identify a work packet before implementation.
 - Verify claims with tests, checks, or documented evidence.
+- Emit a Transition Notice when prerequisites are missing or risk grows.
 
-## Related Surfaces
+## Escalation Triggers
 
-- `commands/`
-- `skills/`
-- `schemas/`
-- `planning-templates/`
-- `rules/`
+Promote to Regular Path for unclear requirements, cross-module work, architecture, public API, data, security, dependency, release impact, missing verification, repeated failure, source-library conflict, or user confusion.
 
 ## Validation
 

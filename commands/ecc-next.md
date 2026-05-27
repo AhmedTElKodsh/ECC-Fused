@@ -17,6 +17,18 @@ Route /ecc-next through the ECC-Fusion control plane while preserving ECC compat
 4. Invoke or recommend `ecc-help`.
 5. Emit a Transition Notice if required artifacts are missing.
 
+## Workflow
+
+1. Read active state before recommending action.
+2. Prefer the next legal command in the current path over broad advice.
+3. Fall back to `/ecc-help` only when state is absent or invalid.
+
+## Guardrails
+
+- Preserve ECC compatibility and existing user-owned files.
+- Keep source attribution visible when adapting external framework concepts.
+- Stop at a Transition Notice when prerequisites are missing or risk exceeds the current path.
+
 ## Output
 
 Return the route note, artifacts inspected, next command, and blockers.

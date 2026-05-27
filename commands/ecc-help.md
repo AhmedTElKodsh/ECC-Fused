@@ -11,6 +11,18 @@ Use this command when the user does not know what to do next, asks which path to
 5. Recommend Short Path, Regular Path, Auto, Ralph, or a shared skill.
 6. Emit a Transition Notice when prerequisites are missing.
 
+## Workflow
+
+1. Classify the user's intent and requested skill or path.
+2. Inspect active state, route prerequisites, and artifact completeness.
+3. Recommend the safest valid route and stop before execution unless the user explicitly proceeds.
+
+## Guardrails
+
+- Preserve advisory behavior by default.
+- Do not create artifacts or invoke Ralph from help alone.
+- Emit a Transition Notice when prerequisites are missing.
+
 ## Output
 
 ```text

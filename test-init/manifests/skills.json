@@ -1,0 +1,541 @@
+[
+  {
+    "id": "ask-interview",
+    "name": "Ask Interview",
+    "file": "skills/ask-interview/SKILL.md",
+    "category": "Clarification & Research",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "Superpowers",
+      "Matt Pocock skills",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "ecc-help",
+    "name": "ECC Help",
+    "file": "skills/ecc-help/SKILL.md",
+    "category": "Discovery & Help",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "BMAD-METHOD",
+      "ECC",
+      "Agent OS"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "grill-with-context",
+    "name": "Grill With Context",
+    "file": "skills/grill-with-context/SKILL.md",
+    "category": "Clarification & Research",
+    "pathAvailability": [
+      "Regular Path",
+      "Auto"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "Superpowers",
+      "Matt Pocock skills",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "write-spec",
+    "name": "Write Spec",
+    "file": "skills/write-spec/SKILL.md",
+    "category": "Specification & Product",
+    "pathAvailability": [
+      "Regular Path",
+      "Auto"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "BMAD-METHOD",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "prototype-ui",
+    "name": "Prototype UI",
+    "file": "skills/prototype-ui/SKILL.md",
+    "category": "Specification & Product",
+    "pathAvailability": [
+      "Regular Path",
+      "Auto"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "Superpowers",
+      "Matt Pocock skills",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "architecture-plan",
+    "name": "Architecture Plan",
+    "file": "skills/architecture-plan/SKILL.md",
+    "category": "Architecture & Planning",
+    "pathAvailability": [
+      "Regular Path",
+      "Auto"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "BMAD-METHOD",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "create-work-packets",
+    "name": "Create Work Packets",
+    "file": "skills/create-work-packets/SKILL.md",
+    "category": "Work Packet & Delegation",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "GSD Redux",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "implement-work-packet",
+    "name": "Implement Work Packet",
+    "file": "skills/implement-work-packet/SKILL.md",
+    "category": "Implementation",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "GSD Redux",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "tdd",
+    "name": "TDD",
+    "file": "skills/tdd/SKILL.md",
+    "category": "Testing & Verification",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "Superpowers",
+      "Matt Pocock skills",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "diagnose",
+    "name": "Diagnose",
+    "file": "skills/diagnose/SKILL.md",
+    "category": "Clarification & Research",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "Superpowers",
+      "Matt Pocock skills",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "write-tests",
+    "name": "Write Tests",
+    "file": "skills/write-tests/SKILL.md",
+    "category": "Testing & Verification",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "Superpowers",
+      "Matt Pocock skills",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "verify-work",
+    "name": "Verify Work",
+    "file": "skills/verify-work/SKILL.md",
+    "category": "Testing & Verification",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "Superpowers",
+      "Matt Pocock skills",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "review-oss-output",
+    "name": "Review OSS Output",
+    "file": "skills/review-oss-output/SKILL.md",
+    "category": "Review & Security",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "gstack",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "security-review",
+    "name": "Security Review",
+    "file": "skills/security-review/SKILL.md",
+    "category": "Review & Security",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "gstack",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "qa-browser",
+    "name": "QA Browser",
+    "file": "skills/qa-browser/SKILL.md",
+    "category": "QA & Release",
+    "pathAvailability": [
+      "Regular Path"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "gstack",
+      "ECC"
+    ],
+    "sharedSkill": false,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "ship-release",
+    "name": "Ship Release",
+    "file": "skills/ship-release/SKILL.md",
+    "category": "QA & Release",
+    "pathAvailability": [
+      "Regular Path"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "gstack",
+      "ECC"
+    ],
+    "sharedSkill": false,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "retro-learn",
+    "name": "Retro Learn",
+    "file": "skills/retro-learn/SKILL.md",
+    "category": "Documentation & Handoff",
+    "pathAvailability": [
+      "Regular Path"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "gstack",
+      "ECC"
+    ],
+    "sharedSkill": false,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "write-a-skill",
+    "name": "Write A Skill",
+    "file": "skills/write-a-skill/SKILL.md",
+    "category": "Governance & Maintenance",
+    "pathAvailability": [
+      "Regular Path"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "Superpowers",
+      "Matt Pocock skills",
+      "ECC"
+    ],
+    "sharedSkill": false,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "skill-lint",
+    "name": "Skill Lint",
+    "file": "skills/skill-lint/SKILL.md",
+    "category": "Governance & Maintenance",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "OpenSpec",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "package-check",
+    "name": "Package Check",
+    "file": "skills/package-check/SKILL.md",
+    "category": "Governance & Maintenance",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "OpenSpec",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "handoff",
+    "name": "Handoff",
+    "file": "skills/handoff/SKILL.md",
+    "category": "Documentation & Handoff",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "Superpowers",
+      "Matt Pocock skills",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "path-switch",
+    "name": "Path Switch",
+    "file": "skills/path-switch/SKILL.md",
+    "category": "Work Packet & Delegation",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "GSD Redux",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "transition-guard",
+    "name": "Transition Guard",
+    "file": "skills/transition-guard/SKILL.md",
+    "category": "Work Packet & Delegation",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "GSD Redux",
+      "ECC"
+    ],
+    "sharedSkill": true,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  },
+  {
+    "id": "ralph-loop",
+    "name": "Ralph Loop",
+    "file": "skills/ralph-loop/SKILL.md",
+    "category": "Automation Accelerators",
+    "pathAvailability": [
+      "Ralph"
+    ],
+    "prerequisites": [
+      "repository context readable",
+      "route prerequisites satisfied"
+    ],
+    "sourceInspiration": [
+      "Ralph",
+      "ECC"
+    ],
+    "sharedSkill": false,
+    "conflictsWith": [],
+    "owner": "ECC-Fusion maintainers",
+    "deprecated": false
+  }
+]

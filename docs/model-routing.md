@@ -1,25 +1,20 @@
 # Model Routing
 
-## Purpose
+Model routing assigns work to high-end, OSS/local, or human review tiers based on risk, ambiguity, context size, and evidence requirements.
 
-Define the ECC-Fusion Model Routing surface and keep it aligned with commands, skills, manifests, schemas, and planning artifacts.
+## Honest Claim
 
-## Required Behavior
+The ECC Harness can reduce model-to-model variance by standardizing prompt frame, source precedence, context loading, artifact schemas, work packet boundaries, verification gates, escalation behavior, and handoff format. It cannot make a small model reason like a premium model on ambiguous architecture, product judgment, security, or release-critical work.
 
-- Preserve ECC compatibility.
-- Apply source-of-truth precedence.
-- Use Short Path only for bounded low-risk work.
-- Use Regular Path for ambiguous, high-risk, multi-phase, or production-sensitive work.
-- Emit a Transition Notice when prerequisites are missing.
-- Verify claims with tests, checks, or documented evidence.
+## Output Contract
 
-## Related Surfaces
-
-- `commands/`
-- `skills/`
-- `schemas/`
-- `planning-templates/`
-- `rules/`
+```text
+Model tier: <OSS/local | default | premium | human review>
+Reason: <one sentence>
+Allowed work: <bounded scope>
+Required evidence: <tests/checks/review>
+Escalation trigger: <condition>
+```
 
 ## Validation
 

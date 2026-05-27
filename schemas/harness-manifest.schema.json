@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecc-fusion.local/schemas/harness-manifest.schema.json",
+  "title": "ECC-Fusion Harness Manifest",
+  "type": "object",
+  "required": ["version", "paths", "phases", "orchestration", "kiroPlanningArtifacts"],
+  "properties": {
+    "version": { "type": "string" },
+    "description": { "type": "string" },
+    "paths": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "purpose", "requiredArtifacts", "mustNeverSkip", "escalatesTo"],
+        "properties": {
+          "id": { "enum": ["Short Path", "Regular Path", "Auto", "Ralph"] },
+          "purpose": { "type": "string" },
+          "requiredArtifacts": { "type": "array", "items": { "type": "string" } },
+          "mustNeverSkip": { "type": "array", "items": { "type": "string" } },
+          "escalatesTo": { "type": "string" }
+        }
+      }
+    },
+    "phases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "categories", "subphases", "kiroArtifact"],
+        "properties": {
+          "id": { "type": "string" },
+          "categories": { "type": "array", "items": { "type": "string" } },
+          "subphases": { "type": "array", "items": { "type": "string" } },
+          "kiroArtifact": { "type": "string" }
+        }
+      }
+    },
+    "orchestration": {
+      "type": "object",
+      "required": ["controllerSkills", "commands", "rules"],
+      "properties": {
+        "controllerSkills": { "type": "array", "items": { "type": "string" } },
+        "commands": { "type": "array", "items": { "type": "string" } },
+        "rules": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "kiroPlanningArtifacts": {
+      "type": "object",
+      "required": ["root", "requirements", "design", "tasks", "qaTasks", "purpose"],
+      "properties": {
+        "root": { "type": "string" },
+        "requirements": { "type": "string" },
+        "design": { "type": "string" },
+        "tasks": { "type": "string" },
+        "qaTasks": { "type": "string" },
+        "purpose": { "type": "string" }
+      }
+    }
+  }
+}

@@ -17,6 +17,18 @@ Route /ecc-start-feature through the ECC-Fusion control plane while preserving E
 4. Invoke or recommend `ecc-help`.
 5. Emit a Transition Notice if required artifacts are missing.
 
+## Workflow
+
+1. Capture the feature request in one sentence.
+2. Use `/ecc-help` to choose Short Path, Regular Path, Auto, or Ralph eligibility.
+3. Name the first artifact to create after the route is selected.
+
+## Guardrails
+
+- Preserve ECC compatibility and existing user-owned files.
+- Keep source attribution visible when adapting external framework concepts.
+- Stop at a Transition Notice when prerequisites are missing or risk exceeds the current path.
+
 ## Output
 
 Return the route note, artifacts inspected, next command, and blockers.

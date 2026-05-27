@@ -1,25 +1,39 @@
 # Architecture
 
-## Purpose
+ECC-Fusion architecture is a routed lifecycle, not a bundle of independent methodologies. ECC remains the base platform and every borrowed source-library practice must map into the same path, phase, artifact, and validation contracts.
 
-Define the ECC-Fusion Architecture surface and keep it aligned with commands, skills, manifests, schemas, and planning artifacts.
+## Core Contracts
 
-## Required Behavior
+| Contract | Purpose |
+| --- | --- |
+| Path contract | Defines Short Path, Regular Path, Auto mode, and Ralph eligibility |
+| Phase contract | Defines the canonical lifecycle and phase ownership |
+| Artifact contract | Defines durable outputs and required fields |
+| Escalation contract | Defines when Short Path must promote to Regular Path |
+| Skill invocation contract | Prevents duplicate or conflicting skills |
+| Model routing contract | Bounds model capability variance |
+| Documentation contract | Treats docs as the user interface |
 
-- Preserve ECC compatibility.
-- Apply source-of-truth precedence.
-- Use Short Path only for bounded low-risk work.
-- Use Regular Path for ambiguous, high-risk, multi-phase, or production-sensitive work.
-- Emit a Transition Notice when prerequisites are missing.
-- Verify claims with tests, checks, or documented evidence.
+## System Shape
 
-## Related Surfaces
+```mermaid
+flowchart TD
+  U["User instruction"] --> R["/ecc-help router"]
+  AG["AGENTS.md and project docs"] --> R
+  ST["ECC-Fusion state, manifests, schemas"] --> R
+  R --> P{"Path"}
+  P -->|Short Path| S["Bounded work packet"]
+  P -->|Regular Path| G["Spec-driven governance"]
+  P -->|Ralph| A["Bounded automation loop"]
+  S --> L["Canonical lifecycle phases"]
+  G --> L
+  A --> L
+  L --> E["Verification evidence"]
+```
 
-- `commands/`
-- `skills/`
-- `schemas/`
-- `planning-templates/`
-- `rules/`
+## Critical Design Decision
+
+ECC-Fusion should fuse by normalization, not accumulation: normalize source-library ideas into phases, execution into work packets, safety movement into Transition Notices, and skill placement into stable categories.
 
 ## Validation
 

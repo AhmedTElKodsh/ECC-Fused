@@ -1,0 +1,497 @@
+[
+  {
+    "id": "ecc-start",
+    "command": "/ecc-start",
+    "file": "commands/ecc-start.md",
+    "category": "Discovery & Help",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": false,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "ECC"
+    ],
+    "relatedSkill": "ecc-help"
+  },
+  {
+    "id": "ecc-start-feature",
+    "command": "/ecc-start-feature",
+    "file": "commands/ecc-start-feature.md",
+    "category": "Discovery & Help",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": false,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "ECC"
+    ],
+    "relatedSkill": "ecc-help"
+  },
+  {
+    "id": "ecc-help",
+    "command": "/ecc-help",
+    "file": "commands/ecc-help.md",
+    "category": "Discovery & Help",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": false,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "BMAD-METHOD",
+      "ECC"
+    ],
+    "relatedSkill": "ecc-help"
+  },
+  {
+    "id": "ecc-path-short",
+    "command": "/ecc-path-short",
+    "file": "commands/ecc-path-short.md",
+    "category": "Work Packet & Delegation",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "GSD Redux",
+      "ECC"
+    ],
+    "relatedSkill": "path-switch"
+  },
+  {
+    "id": "ecc-path-regular",
+    "command": "/ecc-path-regular",
+    "file": "commands/ecc-path-regular.md",
+    "category": "Architecture & Planning",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "BMAD-METHOD",
+      "ECC"
+    ],
+    "relatedSkill": "path-switch"
+  },
+  {
+    "id": "ecc-switch-path",
+    "command": "/ecc-switch-path",
+    "file": "commands/ecc-switch-path.md",
+    "category": "Work Packet & Delegation",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "GSD Redux",
+      "ECC"
+    ],
+    "relatedSkill": "path-switch"
+  },
+  {
+    "id": "ecc-next",
+    "command": "/ecc-next",
+    "file": "commands/ecc-next.md",
+    "category": "Discovery & Help",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "GSD Redux",
+      "ECC"
+    ],
+    "relatedSkill": "ecc-help"
+  },
+  {
+    "id": "ecc-status",
+    "command": "/ecc-status",
+    "file": "commands/ecc-status.md",
+    "category": "Discovery & Help",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "ECC"
+    ],
+    "relatedSkill": "ecc-help"
+  },
+  {
+    "id": "ecc-grill",
+    "command": "/ecc-grill",
+    "file": "commands/ecc-grill.md",
+    "category": "Clarification & Research",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": false,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "Superpowers",
+      "Matt Pocock skills",
+      "ECC"
+    ],
+    "relatedSkill": "grill-with-context"
+  },
+  {
+    "id": "ecc-spec",
+    "command": "/ecc-spec",
+    "file": "commands/ecc-spec.md",
+    "category": "Specification & Product",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "BMAD-METHOD",
+      "ECC"
+    ],
+    "relatedSkill": "write-spec"
+  },
+  {
+    "id": "ecc-prototype",
+    "command": "/ecc-prototype",
+    "file": "commands/ecc-prototype.md",
+    "category": "Specification & Product",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "Superpowers",
+      "Matt Pocock skills",
+      "ECC"
+    ],
+    "relatedSkill": "prototype-ui"
+  },
+  {
+    "id": "ecc-architecture",
+    "command": "/ecc-architecture",
+    "file": "commands/ecc-architecture.md",
+    "category": "Architecture & Planning",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "BMAD-METHOD",
+      "ECC"
+    ],
+    "relatedSkill": "architecture-plan"
+  },
+  {
+    "id": "ecc-plan",
+    "command": "/ecc-plan",
+    "file": "commands/ecc-plan.md",
+    "category": "Architecture & Planning",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "BMAD-METHOD",
+      "ECC"
+    ],
+    "relatedSkill": "architecture-plan"
+  },
+  {
+    "id": "ecc-packetize",
+    "command": "/ecc-packetize",
+    "file": "commands/ecc-packetize.md",
+    "category": "Work Packet & Delegation",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "GSD Redux",
+      "ECC"
+    ],
+    "relatedSkill": "create-work-packets"
+  },
+  {
+    "id": "ecc-route",
+    "command": "/ecc-route",
+    "file": "commands/ecc-route.md",
+    "category": "Work Packet & Delegation",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "ECC"
+    ],
+    "relatedSkill": "path-switch"
+  },
+  {
+    "id": "ecc-execute-packet",
+    "command": "/ecc-execute-packet",
+    "file": "commands/ecc-execute-packet.md",
+    "category": "Implementation",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "GSD Redux",
+      "ECC"
+    ],
+    "relatedSkill": "implement-work-packet"
+  },
+  {
+    "id": "ecc-verify",
+    "command": "/ecc-verify",
+    "file": "commands/ecc-verify.md",
+    "category": "Testing & Verification",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "Superpowers",
+      "Matt Pocock skills",
+      "ECC"
+    ],
+    "relatedSkill": "verify-work"
+  },
+  {
+    "id": "ecc-review",
+    "command": "/ecc-review",
+    "file": "commands/ecc-review.md",
+    "category": "Review & Security",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "gstack",
+      "ECC"
+    ],
+    "relatedSkill": "review-oss-output"
+  },
+  {
+    "id": "ecc-security-review",
+    "command": "/ecc-security-review",
+    "file": "commands/ecc-security-review.md",
+    "category": "Review & Security",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "gstack",
+      "ECC"
+    ],
+    "relatedSkill": "security-review"
+  },
+  {
+    "id": "ecc-qa",
+    "command": "/ecc-qa",
+    "file": "commands/ecc-qa.md",
+    "category": "QA & Release",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "gstack",
+      "ECC"
+    ],
+    "relatedSkill": "qa-browser"
+  },
+  {
+    "id": "ecc-ship",
+    "command": "/ecc-ship",
+    "file": "commands/ecc-ship.md",
+    "category": "QA & Release",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "gstack",
+      "ECC"
+    ],
+    "relatedSkill": "ship-release"
+  },
+  {
+    "id": "ecc-retro",
+    "command": "/ecc-retro",
+    "file": "commands/ecc-retro.md",
+    "category": "Documentation & Handoff",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "gstack",
+      "ECC"
+    ],
+    "relatedSkill": "retro-learn"
+  },
+  {
+    "id": "ecc-package-check",
+    "command": "/ecc-package-check",
+    "file": "commands/ecc-package-check.md",
+    "category": "Governance & Maintenance",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": false,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "OpenSpec",
+      "ECC"
+    ],
+    "relatedSkill": "package-check"
+  },
+  {
+    "id": "ecc-skill-lint",
+    "command": "/ecc-skill-lint",
+    "file": "commands/ecc-skill-lint.md",
+    "category": "Governance & Maintenance",
+    "pathAvailability": [
+      "Short Path",
+      "Regular Path",
+      "Auto"
+    ],
+    "stateRequired": false,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "OpenSpec",
+      "ECC"
+    ],
+    "relatedSkill": "skill-lint"
+  },
+  {
+    "id": "ecc-ralph-prepare",
+    "command": "/ecc-ralph-prepare",
+    "file": "commands/ecc-ralph-prepare.md",
+    "category": "Automation Accelerators",
+    "pathAvailability": [
+      "Ralph"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "Ralph",
+      "ECC"
+    ],
+    "relatedSkill": "ralph-loop"
+  },
+  {
+    "id": "ecc-ralph-run",
+    "command": "/ecc-ralph-run",
+    "file": "commands/ecc-ralph-run.md",
+    "category": "Automation Accelerators",
+    "pathAvailability": [
+      "Ralph"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "Ralph",
+      "ECC"
+    ],
+    "relatedSkill": "ralph-loop"
+  },
+  {
+    "id": "ecc-ralph-status",
+    "command": "/ecc-ralph-status",
+    "file": "commands/ecc-ralph-status.md",
+    "category": "Automation Accelerators",
+    "pathAvailability": [
+      "Ralph"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "Ralph",
+      "ECC"
+    ],
+    "relatedSkill": "ralph-loop"
+  },
+  {
+    "id": "ecc-ralph-stop",
+    "command": "/ecc-ralph-stop",
+    "file": "commands/ecc-ralph-stop.md",
+    "category": "Automation Accelerators",
+    "pathAvailability": [
+      "Ralph"
+    ],
+    "stateRequired": true,
+    "transitionNoticeBehavior": "emit when requested route is blocked by missing prerequisites",
+    "sourceInspiration": [
+      "Ralph",
+      "ECC"
+    ],
+    "relatedSkill": "ralph-loop"
+  }
+]

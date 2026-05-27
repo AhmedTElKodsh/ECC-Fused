@@ -1,0 +1,163 @@
+{
+  "version": "0.1.0",
+  "description": "Canonical ECC-Fusion Harness Ecosystem map. This regulates paths, phases, skill categories, orchestration surfaces, and Kiro-style planning artifacts.",
+  "paths": [
+    {
+      "id": "Short Path",
+      "purpose": "Bounded, low-risk, low-ambiguity work with a work packet and verification.",
+      "requiredArtifacts": ["route note", "work packet", "verification evidence", "summary or handoff"],
+      "mustNeverSkip": ["risk check", "scope boundary", "allowed files", "acceptance criteria", "verification", "escalation rules"],
+      "escalatesTo": "Regular Path"
+    },
+    {
+      "id": "Regular Path",
+      "purpose": "Governed spec-driven workflow for ambiguous, risky, multi-phase, architecture-sensitive, or release-sensitive work.",
+      "requiredArtifacts": ["requirements", "design", "tasks", "work packets", "verification evidence", "review evidence", "QA or release evidence"],
+      "mustNeverSkip": ["source precedence", "artifact traceability", "work packet boundaries", "review", "verification"],
+      "escalatesTo": "Human review"
+    },
+    {
+      "id": "Auto",
+      "purpose": "Advisory route selection through /ecc-help.",
+      "requiredArtifacts": ["route note", "rationale", "next command"],
+      "mustNeverSkip": ["source priority explanation", "blocked status"],
+      "escalatesTo": "Regular Path"
+    },
+    {
+      "id": "Ralph",
+      "purpose": "Bounded low-risk automation loop with preflight and stop rules.",
+      "requiredArtifacts": ["bounded packet", "preflight", "progress", "stop diagnostics"],
+      "mustNeverSkip": ["feedback loop", "stop rules", "return path"],
+      "escalatesTo": "Short Path or Regular Path"
+    }
+  ],
+  "phases": [
+    {
+      "id": "Orient",
+      "categories": ["Discovery & Help", "Memory & Context Management"],
+      "subphases": ["help", "route", "risk check", "context read"],
+      "kiroArtifact": "requirements.md"
+    },
+    {
+      "id": "Scope",
+      "categories": ["Clarification & Research"],
+      "subphases": ["intent", "boundaries", "risks", "acceptance"],
+      "kiroArtifact": "requirements.md"
+    },
+    {
+      "id": "Specify",
+      "categories": ["Specification & Product"],
+      "subphases": ["requirements", "examples", "acceptance criteria", "prototype"],
+      "kiroArtifact": "requirements.md"
+    },
+    {
+      "id": "Design",
+      "categories": ["Architecture & Planning"],
+      "subphases": ["architecture", "interfaces", "data", "UX", "decisions"],
+      "kiroArtifact": "design/"
+    },
+    {
+      "id": "Plan",
+      "categories": ["Architecture & Planning", "Work Packet & Delegation"],
+      "subphases": ["work breakdown", "dependencies", "ownership", "verification strategy"],
+      "kiroArtifact": "tasks.md"
+    },
+    {
+      "id": "Build",
+      "categories": ["Implementation"],
+      "subphases": ["packet execution", "TDD loop", "implementation notes"],
+      "kiroArtifact": "tasks.md"
+    },
+    {
+      "id": "Verify",
+      "categories": ["Testing & Verification", "Review & Security"],
+      "subphases": ["tests", "debugging", "review", "security review"],
+      "kiroArtifact": "qa-tasks.md"
+    },
+    {
+      "id": "Release",
+      "categories": ["QA & Release", "Documentation & Handoff"],
+      "subphases": ["QA", "ship", "handoff"],
+      "kiroArtifact": "qa-tasks.md"
+    },
+    {
+      "id": "Learn",
+      "categories": ["Documentation & Handoff", "Governance & Maintenance"],
+      "subphases": ["retro", "memory", "skill improvement"],
+      "kiroArtifact": "retro.md"
+    },
+    {
+      "id": "Govern",
+      "categories": ["Governance & Maintenance"],
+      "subphases": ["skill lint", "package check", "source attribution", "drift check"],
+      "kiroArtifact": "governance.md"
+    },
+    {
+      "id": "Accelerate",
+      "categories": ["Automation Accelerators"],
+      "subphases": ["preflight", "bounded run", "stop diagnostics"],
+      "kiroArtifact": "ralph-progress.md"
+    }
+  ],
+  "orchestration": {
+    "controllerSkills": [
+      "ecc-help",
+      "path-switch",
+      "transition-guard",
+      "create-work-packets",
+      "implement-work-packet",
+      "verify-work",
+      "review-oss-output",
+      "security-review",
+      "skill-lint",
+      "package-check",
+      "handoff",
+      "ralph-loop"
+    ],
+    "commands": [
+      "ecc-start",
+      "ecc-start-feature",
+      "ecc-help",
+      "ecc-path-short",
+      "ecc-path-regular",
+      "ecc-switch-path",
+      "ecc-next",
+      "ecc-status",
+      "ecc-packetize",
+      "ecc-route",
+      "ecc-execute-packet",
+      "ecc-verify",
+      "ecc-review",
+      "ecc-security-review",
+      "ecc-qa",
+      "ecc-ship",
+      "ecc-retro",
+      "ecc-package-check",
+      "ecc-skill-lint",
+      "ecc-ralph-prepare",
+      "ecc-ralph-run",
+      "ecc-ralph-status",
+      "ecc-ralph-stop"
+    ],
+    "rules": [
+      "global-engineering-rules",
+      "context-management-rules",
+      "skill-governance-rules",
+      "path-switching-rules",
+      "testing-rules",
+      "security-rules",
+      "dependency-rules",
+      "oss-worker-rules",
+      "high-end-reviewer-rules",
+      "ralph-safety-rules"
+    ]
+  },
+  "kiroPlanningArtifacts": {
+    "root": ".planning/specs/<feature-slug>/",
+    "requirements": "requirements.md",
+    "design": "design/",
+    "tasks": "tasks.md",
+    "qaTasks": "qa-tasks.md",
+    "purpose": "Make the agent's understanding, design, plan, implementation tasks, testing, QA, and optional developer decisions visible and traceable."
+  }
+}

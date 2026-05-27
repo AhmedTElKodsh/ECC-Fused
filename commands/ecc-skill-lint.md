@@ -17,6 +17,18 @@ Route /ecc-skill-lint through the ECC-Fusion control plane while preserving ECC 
 4. Invoke or recommend `skill-lint`.
 5. Emit a Transition Notice if required artifacts are missing.
 
+## Workflow
+
+1. Check skill metadata, trigger clarity, prerequisites, escalation, and verification sections.
+2. Compare skills with manifests and command references.
+3. Report drift as actionable file-specific findings.
+
+## Guardrails
+
+- Preserve ECC compatibility and existing user-owned files.
+- Keep source attribution visible when adapting external framework concepts.
+- Stop at a Transition Notice when prerequisites are missing or risk exceeds the current path.
+
 ## Output
 
 Return the route note, artifacts inspected, next command, and blockers.
