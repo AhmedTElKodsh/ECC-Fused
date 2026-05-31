@@ -16,6 +16,7 @@ Source libraries are provenance, not navigation. Users should navigate by path, 
 | GitHub Spec Kit | Constitution/spec/plan/tasks/implement progression | Regular Path routing and artifact progression | map into Specify/Design/Plan/Build phases | Adapted |
 | Agent OS | Concise indexed standards and context thrift | skill structure and docs | keep docs/indexes short enough for agent use | Adapted |
 | Ralph | Bounded low-risk execution loop | Ralph eligibility and stop rules | never allow Ralph to replace planning | Adapted |
+| Archon | Optional execution runtime for DAG workflows, fresh sessions, worktree isolation, deterministic nodes, approval gates, monitoring, and adapters | `docs/archon-integration-strategy.md`, optional future runtime adapter | reuse execution mechanics where appropriate; do not make Archon mandatory and do not rebuild a duplicate generic runtime inside ECC-Fusion | Optional integration target |
 
 ## Precedence Rule
 
@@ -29,6 +30,12 @@ When source-library guidance conflicts, apply this order:
 6. General model knowledge.
 
 Manifest entries must include `sourceInspiration` for adapted workflows.
+
+## Runtime Integration Rule
+
+Archon is an optional execution-runtime integration target, not a methodology source and not a required dependency. ECC-Fusion owns policy, routing, artifacts, governance, and safety semantics. Optional runtime adapters may translate those semantics into executable workflows while preserving standalone ECC-Fusion operation.
+
+See [`docs/archon-integration-strategy.md`](archon-integration-strategy.md).
 
 ## Validation
 
