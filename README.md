@@ -10,6 +10,8 @@ The Harness Ecosystem is the backbone that powers and regulates paths, phases, s
 
 Do not move canonical executable skills out of `skills/` or executable commands out of `commands/`. Category folders under `ecosystem/skills/` are generated mirrors for traceability, not the runtime source of truth.
 
+ECC-Fusion owns the engineering policy and methodology layer. General-purpose execution-runtime capabilities such as DAG scheduling, isolated worktrees, multi-session execution, deterministic script nodes, approval pauses, and monitoring should be integrated through an optional runtime such as Archon rather than reimplemented inside ECC-Fusion. See `docs/archon-integration-strategy.md`.
+
 ## I Do Not Know What I Need
 
 Use `/ecc-help` when the next step is unclear. It recommends a route, phase, next artifact, and next command, then stops with a Transition Notice when blocked.
@@ -128,6 +130,7 @@ Before changing or adding a skill, identify its phase, category, source inspirat
 ## Documentation Map
 
 - `docs/harness-ecosystem.md`: harness backbone and integrity rules.
+- `docs/archon-integration-strategy.md`: ECC-Fusion versus Archon boundary, reinvention guardrails, optional runtime mapping, Mermaid diagrams, and phased integration roadmap.
 - `docs/kiro-planning-artifacts.md`: visible requirements/design/tasks/qa-tasks planning model.
 - `docs/path-phase-map.md`: canonical lifecycle, phase/subphase matrix, skill table, and promotion visuals.
 - `docs/skill-extension-guide.md`: rules for modifying or adding skills without disrupting the ecosystem.
